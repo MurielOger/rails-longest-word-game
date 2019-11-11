@@ -13,3 +13,15 @@
  *= require_tree .
  *= require_self
  */
+
+.letter {
+  border: 1px solid black;
+  margin: 3px;
+  padding: 5px;
+  color: #FFF;
+  background-color: #ABCDEF;
+}
+
+.game {
+  padding-top: 10px;
+}

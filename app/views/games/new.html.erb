@@ -1,0 +1,15 @@
+<div>
+  <% @letters.each do | letter | %>
+  <span class="letter"><%= letter %></span>
+  <% end %>
+</div>
+
+<div class="game">
+<form action="/score">
+  <label>What is the longest word you can find ?<br></label>
+  <input type="hidden" name="letters" value="<%= @letters.join(',') %>">
+  <input type="text" name="word">
+  <input type="submit" value="Valider">
+</form>
+</div>
+
